@@ -1,0 +1,56 @@
+REACT APP SETUP - TWO METHODS
+================================
+
+PREREQUISITES:
+• Node.js & npm installed
+• Verify: node -v
+• Verify: npm -v
+
+
+METHOD 1: VITE (Recommended)
+--------------------------------
+
+1. Create app:
+npm create vite@latest my-react-app -- --template react
+
+2. Install dependencies:
+cd my-react-app
+npm install
+
+3. Start dev server:
+npm run dev
+
+App runs at: http://localhost:5173
+
+
+METHOD 2: CREATE REACT APP (Deprecated)
+--------------------------------
+
+1. Create app:
+npx create-react-app jbk-react
+
+2. Navigate to app:
+cd jbk-react
+
+3. Start dev server:
+npm start
+
+App runs at: http://localhost:3000
+
+
+FOLDER STRUCTURE COMMANDS:
+--------------------------------
+mkdir newfolder
+cd newfolder
+cd reactapp
+
+
+QUICK COMMANDS CHEATSHEET:
+--------------------------------
+node -v                    # Check Node version
+npm -v                     # Check npm version
+npm create vite@latest    # Create Vite app
+npx create-react-app      # Create CRA app
+npm install              # Install dependencies
+npm run dev              # Start Vite dev server
+npm start                # Start CRA dev server
