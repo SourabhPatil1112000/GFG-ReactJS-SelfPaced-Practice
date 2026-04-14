@@ -13,11 +13,15 @@ import AppUseStatePropsDestructingObject from './AppUseStatePropsDestructingObje
 import UpdatingObjUseStateHook from './UpdatingObjUseStateHook';
 import BrandFilterUseState from './BrandFilterUseState';
 import AddToCart from './AddToCart';
+import AppUseRef from './AppUseRef';
+import AppUseRefDOMMani from './AppUseRefDOMMani';
 
 const root = ReactDOM.createRoot(document.getElementById('rootElement'));
 root.render(
   <React.StrictMode>
-    <AddToCart/>
+    <AppUseRefDOMMani/>
+    {/* <AppUseRef/> */}
+    {/* <AddToCart/> */}
     {/* <BrandFilterUseState/> */}
     {/* <UpdatingObjUseStateHook/> */}
     {/* <AppUseStatePropsDestructingObject/> */}
