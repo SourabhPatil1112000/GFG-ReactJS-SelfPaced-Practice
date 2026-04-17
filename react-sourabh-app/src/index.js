@@ -17,11 +17,13 @@ import AppUseRef from './AppUseRef';
 import AppUseRefDOMMani from './AppUseRefDOMMani';
 import AppUseEffect from './AppUseEffect';
 import CleanupFun from './CleanupFun';
+import AppUseReducer from './AppUseReducer';
 
 const root = ReactDOM.createRoot(document.getElementById('rootElement'));
 root.render(
   <React.StrictMode>
-    <CleanupFun/>
+    <AppUseReducer/>
+    {/* <CleanupFun/> */}
     {/* <AppUseEffect/> */}
     {/* <AppUseRefDOMMani/> */}
     {/* <AppUseRef/> */}
