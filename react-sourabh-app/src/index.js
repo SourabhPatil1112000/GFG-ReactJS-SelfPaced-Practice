@@ -15,11 +15,15 @@ import BrandFilterUseState from './BrandFilterUseState';
 import AddToCart from './AddToCart';
 import AppUseRef from './AppUseRef';
 import AppUseRefDOMMani from './AppUseRefDOMMani';
+import AppUseEffect from './AppUseEffect';
+import CleanupFun from './CleanupFun';
 
 const root = ReactDOM.createRoot(document.getElementById('rootElement'));
 root.render(
   <React.StrictMode>
-    <AppUseRefDOMMani/>
+    <CleanupFun/>
+    {/* <AppUseEffect/> */}
+    {/* <AppUseRefDOMMani/> */}
     {/* <AppUseRef/> */}
     {/* <AddToCart/> */}
     {/* <BrandFilterUseState/> */}
