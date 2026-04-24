@@ -18,11 +18,40 @@ import AppUseRefDOMMani from './AppUseRefDOMMani';
 import AppUseEffect from './AppUseEffect';
 import CleanupFun from './CleanupFun';
 import AppUseReducer from './AppUseReducer';
+import UseReducerForm from './UseReducerForm';
+import PropDrilling from './PropDrilling';
+import { CountProvider } from './context/count-context';
+import AppUseContext1 from './AppUseContext1';
+import AuthWithUseContext from './AuthWithUseContext';
+import ThemeWithUseContext from './ThemeWithUseContext';
+import PassingDataToSiblingCompWithUseContext from './PassingDataToSiblingCompWithUseContext';
+import RoutingReactSPA from './RoutingReactSPA';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './context/auth-context';
+import UseParams from './UseParams';
 
 const root = ReactDOM.createRoot(document.getElementById('rootElement'));
 root.render(
   <React.StrictMode>
-    <AppUseReducer/>
+    <React.StrictMode>
+    <BrowserRouter>
+      <AuthProvider>
+        <RoutingReactSPA />
+      </AuthProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+  <UseParams/>
+    {/* <BrowserRouter><AuthProvider></AuthProvider></BrowserRouter> */}
+    {/* <BrowserRouter><RoutingReactSPA/></BrowserRouter> */}
+    {/* <PassingDataToSiblingCompWithUseContext/> */}
+    {/* <ThemeWithUseContext/> */}
+    {/* <AuthWithUseContext/> */}
+    {/* <CountProvider>
+      <AppUseContext1/>
+    </CountProvider> */}
+    {/* <PropDrilling/> */}
+    {/* <UseReducerForm/> */}
+    {/* <AppUseReducer/> */}
     {/* <CleanupFun/> */}
     {/* <AppUseEffect/> */}
     {/* <AppUseRefDOMMani/> */}
